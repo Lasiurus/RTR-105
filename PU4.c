@@ -30,8 +30,14 @@ int main(){
     int skaitlis;
     long long skaitlisLong;
 
-    printf("Ievadiet decimaalu skaitli: \n ");
+    printf("Ievadiet pozitiivu decimaalu skaitli: \n ");
     scanf("%d", &skaitlis);
+    
+    //šī nav faktoriāļa vērtība, tāpēc tā daru.
+    if(skaitlis < 0){
+        printf("tikai pozitiivus skaitlus");
+        return 0;
+    }
 
     printf("char / int / long-long? \n");
     scanf("%s", tips);
