@@ -23,7 +23,7 @@ Kods sastāv no *main()* funkcijas un lietotāja funkcijas *cosinus_teilors()*.
 ```void main();```- Ievades formas priekš user input,ko izmanto funkcijas *cosinus_teilors()* izpildei šeit.
  
  
-### Kods - [ld1_series.c](https://github.com/Lasiurus/RTR-105/blob/main/1ld_series/1.Laboratorijas_darbs.c)
+### Kods - [ld1_series.c](https://github.com/Lasiurus/RTR-105/blob/main/1ld_series/ld1_series.c)
 
 ```#include <stdio.h>
 #include <stdlib.h>
