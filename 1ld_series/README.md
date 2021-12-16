@@ -9,10 +9,10 @@ Un šo vērtību salīdzināt ar standartfunkciju, kas atrodama *math.h*.
  **Dotā funkcija - *cos(x/2).***  
 Kods sastāv no *main()* funkcijas un lietotāja funkcijas *cosinus_teilors()*.  
 
-```double cosinus_tailors(double, int);```- Rekurenti aprēķina teilora rindas summu ar while loop, kur:"
+```double cosinus_tailors(double, int);```- Rekurenti aprēķina teilora rindas summu ar while loop, kur:
 #### Ievade
-- *x* : konstante. Izmanto nulles reizinātāja un rekurentā reizinātāja izteiksmēs.
-- *sum_part_count* : konstante. Nosaka cik daudz reizes funkcijas loop strādās, jeb, cik precīzu vērtību vajag priekš S (kad salīdzinās ar standartfunkciju;
+- *x* : konstante. Izmanto nulles reizinātāja un rekurentā reizinātāja izteiksmēs;
+- *sum_part_count* : konstante. Nosaka cik daudz reizes funkcijas loop strādās, jeb, cik precīzu vērtību vajag priekš S (kad salīdzinās ar standartfunkciju);
 #### Runtime
 - *a* ir Teilora rindas locekļa vērtība indeksācijas while loop pozīcijā *k*;
 - *pirmsped_loc* ir *a* vērtība pirmspēdējā izpildāmā cikla iterācijā;
