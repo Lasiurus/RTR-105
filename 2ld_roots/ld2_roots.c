@@ -33,17 +33,17 @@ float cos_sakne(float a,float b,float delta_x){
     }
 
     printf("cos(a/2)=cos(%g)=%7.3f\t\t\t\t cos(b/2)=cos(%g)=%7.3f\n\n",a,cos(a/2),b,cos(b/2));
-    printf("\niteraacija(k)\t\ta\t\tb\t\tf(c)\n");
+    printf("\niteraacija(k)\t\ta\t\tb\t\tc\t\tf(c)\n");
     while((b-a)>delta_x){
         k++;
         c=(a+b)/2;
         if(f_a*cos(c/2)>0){
             a=c;
-            printf("\t%d\t\t%g\t\t%g\t\t%g\n",k,a,b,c);
+            printf("\t%d\t\t%g\t\t%g\t\t%g\t\t%g\n",k,a,b,c,cos(c/2));
             }
         else{
             b=c;
-            printf("\t%d\t\t%g\t\t%g\t\t%g\n",k,a,b,c);
+            printf("\t%d\t\t%g\t\t%g\t\t%g\t\t%g\n",k,a,b,c,cos(c/2));
         }
     }
     printf("\n\nSakne atrodas pie x=%g, jo cos(x/2) ir %10f\n",c,cos(c/2));
