@@ -120,11 +120,18 @@ Sakne atrodas pie x=9.42474, jo cos(x/2) ir  -0.000017
 
 ### Funkcijas grafika kods - [1ld_roots_graph.gnu](https://github.com/Lasiurus/RTR-105/blob/main/2ld_roots/1ld_roots_graph.gnu)
 ```set terminal png
-set output "cosxdiv2_teilor.png"
+set output "cosxdiv2_root.png"
 
+set xlabel "x"
+set ylabel "y"
+set title "f(x) = cos(x/2)"
 set grid
-plot [0:2*pi] sin(x)
-replot [0:2*pi] cos(x) title "cos(x)"
-replot "derivative.dat" every ::1 using 1:2 with lines title "cos'(x) (analytical formula)"
-replot "derivative.dat" every ::1 using 1:3 with lines title "cos'(x) (finite difference)"
+set tics nomirror
+set xrange [6:10]
+set yrange [-2:2]
+set xtics ( "-4π" -4*pi, "-3π" -3*pi,"-2π" -2*pi,"-π" (-1)*pi,"0" 0, "π" pi, "2π" 2*pi,"3π" 3*pi,"4π" 4*pi,)
+set object circle at first 9.42474,0 radius char 0.5 \
+    fillstyle empty border lc rgb '#aa1100' lw 2
+
+plot cos(x/2)
 ```
