@@ -118,7 +118,7 @@ Sakne atrodas pie x=9.42474, jo cos(x/2) ir  -0.000017
 ### Funkcijas grafiks izmantojot gnuplot - [cosxdiv2_root.png](https://github.com/Lasiurus/RTR-105/blob/main/2ld_roots/cosxdiv2_root.png)
 ![image](https://github.com/Lasiurus/RTR-105/blob/main/2ld_roots/cosxdiv2_root.png)
 
-### Funkcijas grafika kods - [1ld_roots_graph.gnu](https://github.com/Lasiurus/RTR-105/blob/main/2ld_roots/1ld_roots_graph.gnu)
+### Funkcijas grafika kods - [2ld_roots_graph.gnu](https://github.com/Lasiurus/RTR-105/blob/main/2ld_roots/2ld_roots_graph.gnu)
 ```set terminal png
 set output "cosxdiv2_root.png"
 
