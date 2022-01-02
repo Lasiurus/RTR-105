@@ -96,8 +96,9 @@ delta_x veertiba?
 ## Pielikums
 
 Visu grafiku dati tiek ņemti no ld3_derivative.c koda izveidotiem datiem, kuri tika saglabāti failā *derivative.dat*.
-### Visu funckiju grafiki pie delta_x=1 - [cosxdiv2_derivative_all_delta_1.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2nd_derivative_delta_1.png)
-![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2nd_derivative_delta_1.png)
+
+### Visu funckiju grafiki pie delta_x=1 - [cosxdiv2_derivative_all_delta_1.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_derivative_all_delta_1.png)
+![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_derivative_all_delta_1.png)
 
 Pēc grafikiem redzams, ka ir novērojama nobīde starp 1. un 2.kārtas atvasinājumu grafikiem pie analītiskās un "finite diference" metodēm.
 
@@ -109,8 +110,8 @@ Var arī secināt, ka analītiskās metodes grafiki priekš 1. un 2.kārtas atva
 [cosxdiv2_1st_derivative_delta_1.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_1st_derivative_delta_1.png)
 ![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_1st_derivative_delta_1.png)
 
-[cosxdiv2_2st_derivative_delta_1.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2st_derivative_delta_1.png)
-![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2st_derivative_delta_1.png)
+[cosxdiv2_2st_derivative_delta_1.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2nd_derivative_delta_1.png)
+![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2nd_derivative_delta_1.png)
 
 Šajos grafikos var sīkāk redzēt abu metožu precizitāti un atšķirības.
 
@@ -125,8 +126,8 @@ Attiecīgi var secināt, ka "finite difference" metode ir objektīva pie mazām 
 [cosxdiv2_1st_derivative_delta_01.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_1st_derivative_delta_01.png)
 ![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_1st_derivative_delta_01.png)
 
-[cosxdiv2_2st_derivative_delta_01.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2st_derivative_delta_01.png)
-![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2st_derivative_delta_01.png)
+[cosxdiv2_2st_derivative_delta_01.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2nd_derivative_delta_01.png)
+![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2nd_derivative_delta_01.png)
 
 
 
