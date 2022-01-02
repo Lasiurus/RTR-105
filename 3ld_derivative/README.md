@@ -98,6 +98,7 @@ delta_x veertiba?
 Visu grafiku dati tiek ņemti no ld3_derivative.c koda izveidotiem datiem, kuri tika saglabāti failā *derivative.dat*.
 
 ### Visu funckiju grafiki pie delta_x=1 - [cosxdiv2_derivative_all_delta_1.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_derivative_all_delta_1.png)
+
 ![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_derivative_all_delta_1.png)
 
 Pēc grafikiem redzams, ka ir novērojama nobīde starp 1. un 2.kārtas atvasinājumu grafikiem pie analītiskās un "finite diference" metodēm.
@@ -119,6 +120,7 @@ Var arī secināt, ka analītiskās metodes grafiki priekš 1. un 2.kārtas atva
 
 ### Visu funckiju grafiki pie delta_x=0.1
 [cosxdiv2_derivative_all_delta_01.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_derivative_all_delta_01.png)
+
 ![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_derivative_all_delta_01.png)
 
 Salīdzinot ar pirmo visu grafiku bildi, šeit abu metožu grafiki jau sāk sakrist viens ar otru un attiecīgi paliek daudz precīzāki. 
