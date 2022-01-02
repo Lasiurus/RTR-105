@@ -108,9 +108,11 @@ Var arī secināt, ka analītiskās metodes grafiki priekš 1. un 2.kārtas atva
 
 
 [cosxdiv2_1st_derivative_delta_1.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_1st_derivative_delta_1.png)
+
 ![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_1st_derivative_delta_1.png)
 
 [cosxdiv2_2st_derivative_delta_1.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2nd_derivative_delta_1.png)
+
 ![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2nd_derivative_delta_1.png)
 
 Šajos grafikos var sīkāk redzēt abu metožu precizitāti un atšķirības.
@@ -124,9 +126,11 @@ Salīdzinot ar pirmo visu grafiku bildi, šeit abu metožu grafiki jau sāk sakr
 Attiecīgi var secināt, ka "finite difference" metode ir objektīva pie mazām delta_x vērtībām (vismaz 0.1 un mazāk).
 
 [cosxdiv2_1st_derivative_delta_01.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_1st_derivative_delta_01.png)
+
 ![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_1st_derivative_delta_01.png)
 
 [cosxdiv2_2st_derivative_delta_01.png](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2nd_derivative_delta_01.png)
+
 ![image](https://github.com/Lasiurus/RTR-105/blob/main/3ld_derivative/cosxdiv2_2nd_derivative_delta_01.png)
 
 
