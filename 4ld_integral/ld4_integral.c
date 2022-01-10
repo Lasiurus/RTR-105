@@ -39,7 +39,7 @@ float Midpoint_integral(float a, float b, int n){
     Integral_mid = 0;
     delta_x = (b-a)/n;
 
-    b = delta_x;
+    b = a + delta_x;
 
     for(k=1;k<=n;k++){
         midpoint = (b + a)/2;
