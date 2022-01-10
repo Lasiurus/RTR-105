@@ -133,10 +133,11 @@ float Simpsons_integral(float a, float b, int n){
 
 ### Koda izvade
 Tika izvēlētas robežas vērtības a=0, b=8 un precizitāte, jeb *n* vērtības 5, 10, 50, 100.
+Tika mēģinātas arī negatīvu skaitļu robežas, un tika pārbaudīts, ka viss funkcionē optimāli.
 
 **Wolfram Alpha kalkulatora rezultāts = -1.51360499061586**, mājaslapā https://www.wolframalpha.com/input/?i2d=true&i=Integrate%5Bcos%5C%2840%29Divide%5Bx%2C2%5D%5C%2841%29%2C%7Bx%2C0%2C8%7D%5D
 
-## *n = 5*
+#### *n = 5*
 
 ```funkcija f(x) = cos(x/2)
 
@@ -156,4 +157,67 @@ Laukums zeme grafika ar:
 
 Pie *n = 5* redzams, ka visprecīzākā metode taisnstūru metode, bet visneprecīzākā - simpsona metode.
 
-## *n = 10*
+#### *n = 10*
+
+```funkcija f(x) = cos(x/2)
+
+Saakuma intervaals (a)?
+0
+Beigu intervaals (b)?
+8
+Intervaalu skaits (precizitaate)? (n)
+10
+
+Laukums zeme grafika ar:
+        Viduspunktu, jeb taisnstuuru metodi = -1.523742914200
+        Trapeces metodi = -1.493369460106
+        Simpsona metodi = -1.578654885292
+```
+
+#### *n = 50*
+
+```funkcija f(x) = cos(x/2)
+
+Saakuma intervaals (a)?
+0
+Beigu intervaals (b)?
+8
+Intervaalu skaits (precizitaate)? (n)
+50
+
+Laukums zeme grafika ar:
+        Viduspunktu, jeb taisnstuuru metodi = -1.514009356499
+        Trapeces metodi = -1.512798428535
+        Simpsona metodi = -1.516720294952
+```
+
+
+#### *n = 100*
+
+```funkcija f(x) = cos(x/2)
+
+Saakuma intervaals (a)?
+0
+Beigu intervaals (b)?
+8
+Intervaalu skaits (precizitaate)? (n)
+100
+
+Laukums zeme grafika ar:
+        Viduspunktu, jeb taisnstuuru metodi = -1.513705253601
+        Trapeces metodi = -1.513402581215
+        Simpsona metodi = -1.514397263527
+```
+
+Visos šajos precizitātes gadījumos var secināt, ka labākā metode ir **taisnstūru metode**, otrā labākā ir **trapeces metode**, bet vissliktākā ir **Simpsona metode**.
+
+
+## Pielikums
+
+### Funkcijas grafiks ar iekrāsotu laukumu zem grafika, kad x ir [0;8] - [cosxdiv2_integral.png](https://github.com/Lasiurus/RTR-105/blob/main/4ld_integral/cosxdiv2_integral.png)
+
+![image](https://github.com/Lasiurus/RTR-105/blob/main/4ld_integral/cosxdiv2_integral.png)
+
+### Laukuma aprēķins un grafiks ar Wolfram Alpha palīdzību (attēls) - [4ld_integral_Wolfram_alpha.png](https://github.com/Lasiurus/RTR-105/blob/main/4ld_integral/4ld_integral_Wolfram_alpha.png)
+
+![image](https://github.com/Lasiurus/RTR-105/blob/main/4ld_integral/4ld_integral_Wolfram_alpha.png)
