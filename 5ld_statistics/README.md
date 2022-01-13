@@ -9,18 +9,18 @@ Uzdevums bija no lietotāja iegūt char datu ievades simbolus, kurus pēc tam sa
 
 Kods ir garš, bet tikai modas vērtības aprēķins būtu uzskatāms, kā sarežģīts, jo pārējās darbības, kā datu sakārtošana vai mediānas iegūšana ir matemātiski vienkārši implementājamas C valodā.
 
-Viss notiek *main()* funkcijā. Dažas darbības, kā *bubble sort* vai modas iegūšana varēja būt izveidotas kā atsevišķas funckijas, bet tas visu tikai sarežģītu ar papildus mainīgajiem uzdevumā, kur netiek prasīta koda optimizācija. Kodu var uzlabot, izmantojot daudz mazāk *for* loops, bet tas padarītu kodu daudz sarežģītāku.
+Viss notiek *main()* funkcijā. Dažas darbības, kā *bubble sort* vai modas iegūšana varēja būt izveidotas kā atsevišķas funkcijas, bet tas visu tikai sarežģītu ar papildus mainīgajiem uzdevumā, kur netiek prasīta koda optimizācija. Kodu var uzlabot, izmantojot daudz mazāk *for* loops, bet tas potenciāli padarītu kodu daudz sarežģītāku nekā tas jau ir.
 
-#### Programmas darbības secība
+#### Programmas darbību secība
 
   - Lietotājam prasa ievadīt masīva lielumu, kā "int" vērtību mainīgajā *n*.
   - Tiek definēts *char* masīva mainīgais ar *n* kā tā lielumu.
   - Lietotājam tiek pieprasīta simbolu rinda, ko raksta vienā rindā un pēc pabeigšanas, nospiež *Enter*.
-  - Nesakārtotie masīva dati tiek ierakstīti *dat* failā priekš GNUPLOT analīzes kā divas kolonas - simboi un to ASCII vērtības.
+  - Nesakārtotie masīva dati tiek ierakstīti *dat* failā priekš GNUPLOT analīzes kā divas kolonas - simboli un to ASCII vērtības.
   - Notiek īsa masīva lieluma *n* pārbaude, lai noteiktu, vai mediāna būs viens ieraksts(nepāra) vai 2 ieraksti (pāra).
   - **Tālāk ir programmas svarīgākā daļa - sorting algoritms. Tika izvēlēts *bubble sort* algoritms**, jo tas ir visvienkāršākais no sorting algoritmiem, kas izmanto divus *for loop*, pārbaudot un, ja vajag, pārbīdot katru masīva locekli, kas ir ļoti neefektīvi un ar lieliem datu apjomiem - laikietilpīgi. Un, lai gan *bubble sort* ir ar Big-O izpildes ātruma proporcionalitāti O(n^2), tam šajā programmā nav lielas nozīmes, ja lietotājs neievada lielus datu apjomus ar *n = 10000* vai vairāk, kas būtiski palielinās algoritma darbības laiku. Protams, varēja arī izmērīt algoritma darbības laiku, bet tas šajā laboratorijas darbā nebija prasīts.
   - Min. un max. vērtības iegūšana. Ļoti vienkārša - izvadīt pirmo un pēdējo sakārtotā masīva locekli.
-  - Mediānas iegūšana (balstās uz 5.punkta teiktā). Vidējā masīva vērtība, ja nepāra masīvs un 2 vidus locekļu vidējās vērtības, ka pāra masīvs.
+  - Mediānas iegūšana (balstās uz 5.punktā minēto). Masīva vidus vērtība, ja ir nepāra masīvs. Un divu vidus locekļu vidējā vērtības, ja ir pāra masīvs.
   - **Sarežģītākā programmas daļa - datu modas iegūšana**. C valodā ir ļoti sarežģīti izpildīt šo uzdevumu, dēļ ļoti primitīvām vai pat neeksistējošām masīvu un string apstrādes funkcijām.
   - Simbolu rindas izvade, kurai seko simbolu rindas ASCII vērtību izvade, formatēta divās rindās, kur zem konkrētā datu simbola vajag būt tā atbilstošajai ASCII koda vērtībai.
   - Sakārtoto datu izvade *dat* failā priekš GNUPLOT histogrammas izveides.
@@ -162,9 +162,9 @@ void main(){
 
 ### Koda izvade
 
-Lietotājam arī tiek prasīts ievadīt *int* skaitli, lai noteiktu char masīva lielumu, jo, veicot datu analīzi, rodas traucējoši un "parazītiski" dati, kas ir ASCII vērtības neaizpildītajām ailēm masīvā. Lietotājs, protams, var pēc masīva lieluma noteikšanas ievadīt vairāk vai mazāk ASCII simbolus, bet tas, protams, nav ieteicams, jo nav bijis iespējams izveidot effektīvas "aizsargmehānismu" funkcijas.
+Lietotājam arī tiek prasīts ievadīt *int* skaitli, lai noteiktu *char* masīva lielumu, jo, veicot datu analīzi, rodas traucējoši un "parazītiski" dati, kas rodas neaizpildītajām ailēm masīvā. Lietotājs, protams, var pēc masīva lieluma (n) noteikšanas ievadīt vairāk vai mazāk ASCII simbolus, bet tas, protams, nav ieteicams, jo nav bijis iespējams izveidot effektīvas "aizsargmehānismu" funkcijas.
 
-Lielas problēmas radīja tas, ka nav iespējams mainīt *char* masīva definēto lielumu, pēc tā inicializācijas. Tas teorētiski ir izdarāms pa tiešo manipulējot ar masīva adresi atmiņā, bet tas šī darba ietvaros ir pārāk sarežģīti un nav pat vajadzīgs.
+Lielas problēmas radīja tas, ka nav iespējams mainīt *char* masīva definēto lielumu, pēc tā inicializācijas (tas teorētiski ir izdarāms pa tiešo manipulējot ar masīva adresi atmiņā, bet tas šī darba ietvaros ir pārāk sarežģīti un nav pat vajadzīgs).
 
 
 Šajā izvadē tika izvēlēts masīva lielums **n = 40** un ievadīta random burtu un ciparu rinda - **a81B5fcee8547cE19Pe0d4Xca682fa9Mo8hTH4Qo**.
